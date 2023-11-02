@@ -1,6 +1,7 @@
 const navMenu = document.getElementById('nav-menu');
       navToggle = document.getElementById('nav-toggle');
       navClose = document.getElementById('nav-close');
+      navSocial = document.getElementById('nav-media')
 
 if (navToggle) {
   navToggle.addEventListener('click', () => {

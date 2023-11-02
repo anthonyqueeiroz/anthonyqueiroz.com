@@ -72,6 +72,12 @@ a {
 ul {
   list-style: none;
 }
+
+textarea {
+  resize: none;
+  width: 100%;
+  
+}
 /******************** LAYOUT **********************/
 .container {
   max-width: 1200px;
@@ -90,7 +96,7 @@ ul {
   bottom: 0;
   left: 0;
   z-index: 100;
-  background-color: #fff;
+  background-color: #4c59b8;
 }
 .section{
   padding: 2rem 0 4rem;
@@ -138,12 +144,16 @@ ul {
   flex-direction: column;
   align-items: center;
   font-size: var(--normal-font-size);
+  padding: 2px;
   font-weight: 400;
-  color: #131D47;
+  color: #fff; /*#131D47*/
 }
 
-.header-nav-link:hover, .header-nav-logo:hover, .nav-btn-toggle:hover, .nav-close:hover{
-  color: #6e79ce;
+.header-nav-link:hover, .nav-btn-toggle:hover, .nav-close:hover{
+  border-radius: 10px;
+  background-color: #131d4779;
+  /* color: rgba(255, 255, 255, 0.548); */
+  /* color: #6e79ce; */
 }
 
 .header-nav-logo {
@@ -152,7 +162,7 @@ ul {
   gap: 10px;
   font-size: var(--h3-font-size);
   font-weight: 500;
-  color: #131D47;
+  color:#fff ; /*#131D47*/
 }
 
 .header-logo {
@@ -174,7 +184,7 @@ ul {
 
 .nav-btn-toggle {
   font-size: 1.5rem;
-  color: #131D47;
+  color: #131f47;
   cursor: pointer;
 }
 
@@ -184,7 +194,7 @@ ul {
 }
 
 .active-link {
-  color: #4c59b8;
+  color:#131D47 ; /*#4c59b8*/
 }
  /*  */
 .home-section {
@@ -413,7 +423,7 @@ ul {
   font-size: var(--smaller-font-size);
   text-align: center;
   color: hsl(225, 33%, 24%);
-  margin-top: 3rem;
+  margin-top: 1.5rem;
 }
 
 .footer-menu-item:hover {
@@ -422,6 +432,12 @@ ul {
 
 .footer-title, .footer-subtitle, .footer-menu-item {
   color: #fff;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 25px;
+  padding-right: 5px;
 }
 
 /******************* MEDIA QUERIES  **********************/
@@ -464,13 +480,14 @@ ul {
     margin: 0;
   }
 
-  .section {
-    padding: 10rem 0 5rem;
+  .home-section{
+    padding: 8.5rem 0 5rem;
     /* margin-bottom: 2rem; */
   }
 
   .section-subtitle {
-    margin-bottom: 4rem;
+    margin-bottom: 1rem;
+    font-size: var(--small-font-size);
   }
 
   .header {
@@ -509,7 +526,7 @@ ul {
     row-gap: 5rem;
   }
   .home-content {
-    padding-top: 5.5rem;
+    /* padding-top: 2.5rem; */
     column-gap: 2rem;
   }
 
@@ -517,13 +534,122 @@ ul {
     height: 270px;
   }
 
+  /* .section-title {
+    font-size: var(--normal-font-size);
+  } */
+
+  .qualification.section {
+    padding: 6rem 0 5rem;
+  }
+
+  .qualification.section .qualification-container {
+    font-size: var(--smaller-font-size);
+  }
+
+  .qualification-button{
+    font-size: var(--smaller-font-size);
+  }
+
   .qualification-tab {
     justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+
+  .qualification-subtitle {
+    margin-bottom: 0.5rem;
   }
 
   /* .qualification-sections {
     grid-template-columns: .5fr;
   } */
+
+  .contact-container.grid {
+    gap: 1.5rem;
+  }
+
+  .contact-div {
+    margin-top: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content:space-evenly;
+    font-size: .5rem;
+  }
+
+  .contact.section {
+    padding: 6rem 0 5rem;
+  }
+
+  .contact-title {
+    font-size: var(--small-font-size);
+    font-weight: 500;
+  }
+  
+  .contact-subtitle {
+    font-size: var(--smaller-font-size);
+    color: hsl(250, 8%, 45%);
+  }
+
+  .contact-form.grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 75px 150px 100px;
+    grid-template-areas:
+    "contact-content contact-content";
+    gap: 1.2rem;
+  }
+
+  .contact-content {
+    /* background-color:#ececfb; */
+    border-radius: .5rem;
+    padding: 0rem 0 0rem 1rem;
+  }
+  
+  .contact-label {
+    font-size: var(--smaller-font-size);
+    margin-bottom: 0;
+  }
+  
+  .contact-input{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0;
+    /* padding: 0 1rem 0 0; */
+    font-size: var(--smaller-font-size);
+    vertical-align: top;
+  }
+
+  .contact-form.grid .message {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: .25rem 1rem .25rem 1rem;
+
+  }
+
+  .contact-form.grid .message .contact-label {
+    vertical-align: top;
+    /* top: 10px; */
+  }
+
+  .contact-form.grid .message .contact-input {
+    width: 100%;
+    padding: 0;
+
+  }
+
+  .contact-form.grid .contact-button {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  a#nav-media {
+    color: #131D47;
+  }
+  
+  .footer-logo {
+    height: 30px;
+  }
 }
 
  /* --------------- FOR LARGE DEVICES -------------------- */
