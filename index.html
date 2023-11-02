@@ -24,7 +24,7 @@
 <body>
   <header class="header">
     <nav class="header-nav container">
-      <a class="header-nav-logo" href=""> <img src="src/img/logofundobranco.png" alt="atom-logo" class="header-logo"> Anthony</a>
+      <a class="header-nav-logo" href=""> <img src="src/img/logocortrocada.png" alt="atom-logo" class="header-logo"> Anthony</a>
       <div class="nav-menu" id="nav-menu">
         <ul class="header-nav-list grid">
           <li class="header-nav-item">
@@ -71,7 +71,7 @@
             </a>
           </div>
           <div class="home-about-me-image">
-            <img class="about-me-img" src="src/img/myPicture.jpeg" alt="My Picture">
+            <img class="about-me-img" src="src/img/Minhafoto.jpeg" alt="My Picture">
           </div>
 
           <div class="home-about-me">
@@ -81,7 +81,7 @@
               Full-Stack Web Developer with experience in 3 programming languages: JAVA, JavaScript and Python, and with some technologies like Express.JS, React.JS and SpringBoot. <br><br>
               Also I love Math and Physics. 😝
             </p>
-            <a href="" class="button button-flex">Contact me <i class="uil uil-message button-icon"></i></a>
+            <a href="#contact" class="button button-flex">Contact me <!--<i class="uil uil-message button-icon"></i>--></a>
           </div>
         </div>
       </div>
@@ -167,59 +167,53 @@
     <section class="contact section" id="contact">
       <h2 class="section-title">Contact Me</h2>
       <span class="section-subtitle">Get in touch</span>
-      <div class="contact-container container grid">
 
-        <div>
+      <div class="contact-container container grid">
+        <div class="contact-div">
           <div class="contact-information">
             <i class="uil uil-phone contact-icon"></i>
             <div>
               <h3 class="contact-title">Call me</h3>
-              <span class="contact-subtitle">(92) 99181-3740</span>
+              <span class="contact-subtitle">+55 (92) 9 9181-3740</span>
             </div>
           </div>
           <div class="contact-information">
             <i class="uil uil-envelope contact-icon"></i>
             <div>
               <h3 class="contact-title">E-mail</h3>
-              <span class="contact-subtitle">hanthonybdqt@gmail.com</span>
+              <span class="contact-subtitle">anthonyqueeiroz@gmail.com</span>
             </div>
           </div>
         </div>
 
         <form action="" class="contact-form grid">
-          <div class="contact-inputs grid">
+          <!-- <div class="contact-inputs grid"> -->
             <div class="contact-content">
               <label for="" class="contact-label">Name</label>
-              <input type="text" class="contact-input">
+              <input type="text" class="contact-input" maxlength="60">
             </div>
             <div class="contact-content">
               <label for="" class="contact-label">E-mail</label>
-              <input type="email" class="contact-input">
+              <input type="email" class="contact-input" maxlength="30">
             </div>
-          </div>
+          <!-- </div> -->
           <div class="contact-content">
             <label for="" class="contact-label">Project</label>
-            <input type="email" class="contact-input">
+            <input type="email" class="contact-input" maxlength="60">
           </div>
-          <div class="contact-content">
+          <div class="contact-content message">
             <label for="" class="contact-label">Message</label>
-            <textarea name="" id="" cols="0" rows="7" class="contact-input"></textarea>
+            <textarea name="" id="" cols="300" rows="3" class="contact-input" maxlength="400"></textarea>
           </div>
 
-          <div>
-            <a href="" class="button button-flex">
+          <div class="contact-button">
+            <a href="#contact" class="button button-flex">
               Send Message
               <i class="uil uil-message button-icon"></i>
             </a>
           </div>
         </form>
-
-
       </div>
-
-
-
-
     </section>
   </main>
 
@@ -227,14 +221,14 @@
     <div class="footer-background">
       <div class="footer-container container grid">
         <div>
-          <h2 class="footer-title">Anthony Queiroz</h2>
-          <span class="footer-subtitle">Thank you for been in here! Consult my social medias.</span>
+          <h2 class="footer-title"><img src="src/img/logocortrocada.png" class="footer-logo">Anthony Queiroz</h2>
+          <span class="footer-subtitle">Thank you for been in here! Consult my&nbsp;<a id="nav-media" href="#home"> social medias</a>.</span>
         </div>
-        <div class="footer-social">
+        <!-- <div class="footer-social">
           <a class="footer-menu-item" href="https://www.linkedin.com/in/harrison-anthony-queiroz/" target="_blank"><i class="uil uil-linkedin"></i></a>
           <a class="footer-menu-item" href="https://github.com/anthonyqueeiroz" target="_blank"><i class="uil uil-github"></i></a>
           <a class="footer-menu-item" href="https://t.me/anthonyqueeiroz" target="_blank"><i class="uil uil-telegram"></i></a>
-        </div>
+        </div> -->
       </div>
       <p class="footer-copy">&#169; Anthony Queiroz. All rights reserved.</p>
     </div>
